@@ -1,10 +1,8 @@
 ---
 title: "Teaching"
-description: I teach undergraduate and graduate courses on data analysis in R in the [Department of Engineering Management and Systems Engineering](http://emse.seas.gwu.edu/) at The George Washington University.
-preview: images/lab/john_helveston.png
-toc: true
-toc-location: left
-toc-title: "Courses"
+toc: false
+# toc-location: left
+# toc-title: "Courses"
 execute: 
   echo: false
   warning: false
@@ -14,107 +12,128 @@ execute:
 source("_common.R")
 ```
 
-<center>
-Content for **workshops** I've given can be found at [workshops.jhelvy.com](https://workshops.jhelvy.com/)
-</center>
 
-### [EMSE 4571: Programming for Analytics](https://p4a.seas.gwu.edu/)
+**Teaching assistant at the Department of Statistics, University of Toronto** 
 
-::: {.grid}
+- STA220, The Practice of Statistics I  
+- STA237, Probability, Statistics and Data Analysis I  
+- STA238, Probability, Statistics and Data Analysis II  
+- STA302, Methods of Data Analysis I  
+- STA303, Methods of Data Analysis II  
+- STA304, Surveys, Sampling and Observational Data  
+- STA305, Design and Analysis of Experiments  
 
-::: {.g-col-3}
+**Teaching assistant at the Department of Biostatistics, University of Toronto**
 
-<br><img src="images/hex/p4a.png" width="150px">
+- CHL5201, Biostatistics I  
+- CHL5202, Biostatistics II  
 
-**Semesters Taught**:
+**Teaching assistant at the University of Saskatchewan**
 
-- [Spring 2025](https://p4a.seas.gwu.edu/2025-Spring/)
-- [Spring 2024](https://p4a.seas.gwu.edu/2024-Spring/)
-- [Spring 2023](https://p4a.seas.gwu.edu/2023-Spring/)
-- [Spring 2022](https://p4a.seas.gwu.edu/2022-Spring/)
-- [Fall 2020](https://p4a.seas.gwu.edu/2020-Fall/)
-- [Fall 2019](https://p4a.seas.gwu.edu/2019-Fall/)
+- Methods of Data Analysis I  
+- Design and Analysis of Experiments  
+- Elementary statistical concepts  
+- Introduction to Biostatistics  
+- Calculus  
 
-:::
 
-::: {.g-col-9}
+<!-- ### [EMSE 4571: Programming for Analytics](https://p4a.seas.gwu.edu/) -->
 
-This course provides a foundation in programming for analytics using the [R programming language](https://www.r-project.org/) with a comparison to [Python](https://www.python.org/). Topics covered include fundamentals of programming (operators, data types, objects, functions, conditionals, loops, strings, testing, and debugging) as well as techniques for working with data sets in R and Python (file input/output, data structures, data wrangling, data visualization, external packages, and reproducible reporting). Emphasis will be on producing clear, robust, and reasonably efficient code using top-down design, informal analysis, and effective testing and debugging. Students will primarily work on individual programming assignments to develop skills in computational problem solving, writing code, and working with data. Students will be assessed through quizzes, homework assignments, and exams. Teaching will involve interactive lectures with plenty of time spent live coding and working on practice problems in class. This course assumes no prior programming experience and is an ideal preparation for higher level courses in data analytics.
+<!-- ::: {.grid} -->
 
-:::
+<!-- ::: {.g-col-3} -->
 
-:::
+<!-- <br><img src="images/hex/p4a.png" width="150px"> -->
 
-### [EMSE 4572: Exploratory Data Analysis](https://eda.seas.gwu.edu/)
+<!-- **Semesters Taught**: -->
 
-::: {.grid}
+<!-- - [Spring 2025](https://p4a.seas.gwu.edu/2025-Spring/) -->
+<!-- - [Spring 2024](https://p4a.seas.gwu.edu/2024-Spring/) -->
+<!-- - [Spring 2023](https://p4a.seas.gwu.edu/2023-Spring/) -->
+<!-- - [Spring 2022](https://p4a.seas.gwu.edu/2022-Spring/) -->
+<!-- - [Fall 2020](https://p4a.seas.gwu.edu/2020-Fall/) -->
+<!-- - [Fall 2019](https://p4a.seas.gwu.edu/2019-Fall/) -->
 
-::: {.g-col-3}
+<!-- ::: -->
 
-<br><img src="images/hex/eda.png" width="150px">
+<!-- ::: {.g-col-9} -->
 
-[**Project Showcases**](https://eda.seas.gwu.edu/showcase)
+<!-- This course provides a foundation in programming for analytics using the [R programming language](https://www.r-project.org/) with a comparison to [Python](https://www.python.org/). Topics covered include fundamentals of programming (operators, data types, objects, functions, conditionals, loops, strings, testing, and debugging) as well as techniques for working with data sets in R and Python (file input/output, data structures, data wrangling, data visualization, external packages, and reproducible reporting). Emphasis will be on producing clear, robust, and reasonably efficient code using top-down design, informal analysis, and effective testing and debugging. Students will primarily work on individual programming assignments to develop skills in computational problem solving, writing code, and working with data. Students will be assessed through quizzes, homework assignments, and exams. Teaching will involve interactive lectures with plenty of time spent live coding and working on practice problems in class. This course assumes no prior programming experience and is an ideal preparation for higher level courses in data analytics. -->
 
-**Semesters Taught**:
+<!-- ::: -->
 
-- [Fall 2024](https://eda.seas.gwu.edu/2024-Fall/)
-- [Fall 2023](https://eda.seas.gwu.edu/2023-Fall/)
-- [Fall 2022](https://eda.seas.gwu.edu/2022-Fall/)
-- [Spring 2021](https://eda.seas.gwu.edu/2021-Spring/)
-- [Spring 2020](https://eda.seas.gwu.edu/2020-Spring/) 
+<!-- ::: -->
 
-:::
+<!-- ### [EMSE 4572: Exploratory Data Analysis](https://eda.seas.gwu.edu/) -->
 
-::: {.g-col-9}
+<!-- ::: {.grid} -->
 
-This course provides students with a foundation in exploring data using the [R programming language](https://www.r-project.org/). Students will learn how to source, manage, transform, and explore a wide variety of data types. Students will also master the fundamental concepts for visualizing and communicating information contained in raw data, including the human psychology of visual information processing. All analyses will be conducted to support reproducibility from raw data to results using [RMarkdown](https://bookdown.org/yihui/rmarkdown/). Teaching will involve interactive lectures with plenty of class time spent working on examples and coding. Students will be assessed through in-class quizzes, reading reflections, and exploratory projects. Throughout the semester, students will work on a research project of their own design to demonstrate mastery of the course's topics. At the end of the semester, students will submit a final, reproducible report of their project along with a 10-minute video presentation of their findings.
+<!-- ::: {.g-col-3} -->
 
-:::
+<!-- <br><img src="images/hex/eda.png" width="150px"> -->
 
-:::
+<!-- [**Project Showcases**](https://eda.seas.gwu.edu/showcase) -->
 
-### [EMSE 6035: Marketing of Technology](https://madd.seas.gwu.edu/)
+<!-- **Semesters Taught**: -->
 
-::: {.grid}
+<!-- - [Fall 2024](https://eda.seas.gwu.edu/2024-Fall/) -->
+<!-- - [Fall 2023](https://eda.seas.gwu.edu/2023-Fall/) -->
+<!-- - [Fall 2022](https://eda.seas.gwu.edu/2022-Fall/) -->
+<!-- - [Spring 2021](https://eda.seas.gwu.edu/2021-Spring/) -->
+<!-- - [Spring 2020](https://eda.seas.gwu.edu/2020-Spring/)  -->
 
-::: {.g-col-3}
+<!-- ::: -->
 
-<br><img src="images/hex/madd.png" width="150px">
+<!-- ::: {.g-col-9} -->
 
-[**Project Showcases**](https://madd.seas.gwu.edu/showcase)
+<!-- This course provides students with a foundation in exploring data using the [R programming language](https://www.r-project.org/). Students will learn how to source, manage, transform, and explore a wide variety of data types. Students will also master the fundamental concepts for visualizing and communicating information contained in raw data, including the human psychology of visual information processing. All analyses will be conducted to support reproducibility from raw data to results using [RMarkdown](https://bookdown.org/yihui/rmarkdown/). Teaching will involve interactive lectures with plenty of class time spent working on examples and coding. Students will be assessed through in-class quizzes, reading reflections, and exploratory projects. Throughout the semester, students will work on a research project of their own design to demonstrate mastery of the course's topics. At the end of the semester, students will submit a final, reproducible report of their project along with a 10-minute video presentation of their findings. -->
 
-**Semesters Taught**:
+<!-- ::: -->
 
-- [Fall 2024](https://madd.seas.gwu.edu/2024-Fall/)
-- [Fall 2023](https://madd.seas.gwu.edu/2023-Fall/)
-- [Fall 2022](https://madd.seas.gwu.edu/2022-Fall/)
-- [Fall 2021](https://madd.seas.gwu.edu/2021-Fall/)
-- Spring 2019
+<!-- ::: -->
 
-:::
+<!-- ### [EMSE 6035: Marketing of Technology](https://madd.seas.gwu.edu/) -->
 
-::: {.g-col-9}
+<!-- ::: {.grid} -->
 
-This course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the [R programming language](https://www.r-project.org/), survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. At the end of the semester, students will submit a final, reproducible report of their project along with a 10-minute presentation of their findings. This course has a "flipped" classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions.
+<!-- ::: {.g-col-3} -->
 
-:::
+<!-- <br><img src="images/hex/madd.png" width="150px"> -->
 
-:::
+<!-- [**Project Showcases**](https://madd.seas.gwu.edu/showcase) -->
 
-### [R for Analytics Primer](https://jhelvy.github.io/r4aPrimer/)
+<!-- **Semesters Taught**: -->
 
-::: {.grid}
+<!-- - [Fall 2024](https://madd.seas.gwu.edu/2024-Fall/) -->
+<!-- - [Fall 2023](https://madd.seas.gwu.edu/2023-Fall/) -->
+<!-- - [Fall 2022](https://madd.seas.gwu.edu/2022-Fall/) -->
+<!-- - [Fall 2021](https://madd.seas.gwu.edu/2021-Fall/) -->
+<!-- - Spring 2019 -->
 
-::: {.g-col-3}
+<!-- ::: -->
 
-<br><img src="images/r4a.png" width="150px">
+<!-- ::: {.g-col-9} -->
 
-:::
+<!-- This course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the [R programming language](https://www.r-project.org/), survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. At the end of the semester, students will submit a final, reproducible report of their project along with a 10-minute presentation of their findings. This course has a "flipped" classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions. -->
 
-::: {.g-col-9}
+<!-- ::: -->
 
-A self-guided tutorial for developing a foundation in programming in R for data analysis, including data input/output, data wrangling, and data visualization using the [Tidyverse](https://www.tidyverse.org/).
+<!-- ::: -->
 
-:::
+<!-- ### [R for Analytics Primer](https://jhelvy.github.io/r4aPrimer/) -->
 
-:::
+<!-- ::: {.grid} -->
+
+<!-- ::: {.g-col-3} -->
+
+<!-- <br><img src="images/r4a.png" width="150px"> -->
+
+<!-- ::: -->
+
+<!-- ::: {.g-col-9} -->
+
+<!-- A self-guided tutorial for developing a foundation in programming in R for data analysis, including data input/output, data wrangling, and data visualization using the [Tidyverse](https://www.tidyverse.org/). -->
+
+<!-- ::: -->
+
+<!-- ::: -->

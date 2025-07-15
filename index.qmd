@@ -1,32 +1,46 @@
 ---
-title: "John Paul Helveston"
-image: "images/lab/john_helveston_circle.png"
+title: "Mei Dong  (董玫)"
+image: "images/lab/meidong.png"
+page-layout: full
 execute: 
   echo: false
   warning: false
 about:
   template: trestles
+  image-width: 16em
+  image-shape: rounded
+  id: hero-heading
   links:
     - text: '<i class="ai ai-cv fa-lg"></i>'
-      href: https://jhelvy.com/cv
-    - icon: github
-      href: https://github.com/jhelvy
-    - text: '<i class="fa fa-brands fa-bluesky"></i>'
-      href: https://bsky.app/profile/jhelvy.bsky.social
+      href: https://drive.google.com/file/d/16cbtvPXwVsk1reVhhkkwvKViH0d4dUNc/view?usp=sharing
     - icon: linkedin
-      href: https://www.linkedin.com/in/jhelvy/
-    - text: '<i class="ai ai-google-scholar fa-lg"></i>'
-      href: https://scholar.google.com/citations?user=DY2D56IAAAAJ
-    - text: '<i class="ai ai-researchgate fa-lg"></i>'
-      href: https://www.researchgate.net/profile/John_Helveston
+      aria-label: "LinkedIn"
+      href: https://www.linkedin.com/in/mei-dong-297392128/
+    - icon: github
+      aria-label: GitHub
+      href: https://github.com/MeiDongstat
     - text: '<i class="ai ai-orcid fa-lg"></i>'
-      href: https://orcid.org/0000-0002-2657-9191
+      href: https://orcid.org/my-orcid?orcid=0000-0003-1735-5361
+    - text: '<i class="ai ai-google-scholar fa-lg"></i>'
+      aria-label: "Google Scholar"
+      href: https://scholar.google.com/citations?user=L--4tCAAAAAJ&hl=en  
+    - text: '<i class="ai ai-researchgate fa-lg"></i>'
+      href: https://www.researchgate.net/profile/Mei-Dong-8?ev=hdr_xprf
 ---
 
 ```{r setup}
 source("_common.R")
 ```
 
-### Welcome to my personal website!
 
-I am a researcher, engineer, choice modeler, [{{< fa brands r-project >}}](https://www.r-project.org/about.html) developer, musician, swing dancer, and an Assistant Professor at George Washington University in the [Department of Engineering Management and Systems Engineering](http://emse.seas.gwu.edu/). I study technological change with a focus on accelerating the transition to low-carbon technologies like electric vehicles and renewable energy technologies.
+::: {#hero-heading}
+
+
+I am a PhD candiate in Biostatistics at the [University of Toronto](https://www.dlsph.utoronto.ca/division/biostatistics/), where I am fortunate to be supervised by Prof. [Wei Xu](https://www.dlsph.utoronto.ca/faculty-profile/xu-wei/) and Prof. [Linbo Wang](https://sites.google.com/site/linbowangpku/home). I am also a DSI Doctoral Student fellow and a CANSSI STAGE trainee. My research interest is in causal inference, statistical genetics and genomics, and their diverse applications in health related data. 
+
+Before beginning my PhD, I worked as a research associate in the Department of Biostatistics at the University of Toronto, collaborating closely with clinicians from Princess Margaret Hospital and Mount Sinai Hospital. There, I contributed to both methodological development and applied studies—particularly in inflammatory bowel disease and lung cancer. Along the way, I encountered critical gaps in Mendelian randomization methods, which ignited my passion for causal inference and ultimately led me to pursue doctoral research.
+
+Outside of research, I enjoy photography, tennis, and swimming. I served as photographer for CSSC 2025 hosted in Saskatoon. 
+
+
+:::

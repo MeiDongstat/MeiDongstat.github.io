@@ -12,34 +12,34 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 
-gscholar_stats <- function(url) {
-  cites <- get_cites(url)
-  return(glue::glue(
-    'Citations: {cites$citations} | h-index: {cites$hindex} | i10-index: {cites$i10index}'
-  ))
-}
+# gscholar_stats <- function(url) {
+#   cites <- get_cites(url)
+#   return(glue::glue(
+#     'Citations: {cites$citations} | h-index: {cites$hindex} | i10-index: {cites$i10index}'
+#   ))
+# }
 
-get_cites <- function(url) {
-  html <- xml2::read_html(url)
-  node <- rvest::html_nodes(html, xpath='//*[@id="gsc_rsb_st"]')
-  cites_df <- rvest::html_table(node)[[1]]
-  cites <- data.frame(t(as.data.frame(cites_df)[,2]))
-  names(cites) <- c('citations', 'hindex', 'i10index')
-  return(cites)
-}
+# get_cites <- function(url) {
+#   html <- xml2::read_html(url)
+#   node <- rvest::html_nodes(html, xpath='//*[@id="gsc_rsb_st"]')
+#   cites_df <- rvest::html_table(node)[[1]]
+#   cites <- data.frame(t(as.data.frame(cites_df)[,2]))
+#   names(cites) <- c('citations', 'hindex', 'i10index')
+#   return(cites)
+# }
 
 get_pubs <- function() {
-    pubs <- gsheet::gsheet2tbl(
-        url = 'https://docs.google.com/spreadsheets/d/1xyzgW5h1rVkmtO1rduLsoNRF9vszwfFZPd72zrNmhmU')
-    pubs <- make_citations(pubs)
-    pubs$summary <- ifelse(is.na(pubs$summary), FALSE, pubs$summary)
-    pubs$stub <- make_stubs(pubs)
-    pubs$url_summary <- file.path('research', pubs$stub, "index.html")
-    pubs$url_scholar <- ifelse(
-      is.na(pubs$id_scholar), NA, 
-      glue::glue('https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DY2D56IAAAAJ&citation_for_view=DY2D56IAAAAJ:{pubs$id_scholar}')
-    )
-    return(pubs)
+  pubs <- gsheet::gsheet2tbl(
+    url = 'https://docs.google.com/spreadsheets/d/1didInQW61LOz7zroYji-9lGs2v4nYyHnHKMOEFtKVwk/edit?usp=sharing')
+  pubs <- make_citations(pubs)
+  # pubs$summary <- ifelse(is.na(pubs$summary), FALSE, pubs$summary)
+  # pubs$stub <- make_stubs(pubs)
+  # pubs$url_summary <- file.path('research', pubs$stub, "index.html")
+  # pubs$url_scholar <- ifelse(
+  #   is.na(pubs$id_scholar), NA, 
+  #   glue::glue('https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DY2D56IAAAAJ&citation_for_view=DY2D56IAAAAJ:{pubs$id_scholar}')
+  # )
+  return(pubs)
 }
 
 make_citations <- function(pubs) {
@@ -70,31 +70,49 @@ make_doi <- function(doi) {
   return(glue::glue('DOI: [{doi}](https://doi.org/{doi})'))
 }
 
-make_stubs <- function(pubs) {
-    journal <- str_to_lower(pubs$journal)
-    journal <- str_replace_all(journal, ':', '')
-    journal <- str_replace_all(journal, '`', '')
-    journal <- str_replace_all(journal, "'", '')
-    journal <- str_replace_all(journal, "\\.", '')
-    journal <- str_replace_all(journal, "&", '')
-    journal <- str_replace_all(journal, ',', '')
-    journal <- str_replace_all(journal, '  ', '-')
-    journal <- str_replace_all(journal, ' ', '-')
-    return(paste0(pubs$year, '-', journal))
-}
+# make_stubs <- function(pubs) {
+#   journal <- str_to_lower(pubs$journal)
+#   journal <- str_replace_all(journal, ':', '')
+#   journal <- str_replace_all(journal, '`', '')
+#   journal <- str_replace_all(journal, "'", '')
+#   journal <- str_replace_all(journal, "\\.", '')
+#   journal <- str_replace_all(journal, "&", '')
+#   journal <- str_replace_all(journal, ',', '')
+#   journal <- str_replace_all(journal, '  ', '-')
+#   journal <- str_replace_all(journal, ' ', '-')
+#   return(paste0(pubs$year, '-', journal))
+# }
+
+# make_pub_list <- function(pubs, category) {
+#   x <- pubs[which(pubs$category == category),]
+#   pub_list <- list()
+#   for (i in 1:nrow(x)) {
+#     pub_list[[i]] <- make_pub(x[i,], index = i)
+#   }
+#   return(htmltools::HTML(paste(unlist(pub_list), collapse = "")))
+# }
 
 make_pub_list <- function(pubs, category) {
-    x <- pubs[which(pubs$category == category),]
-    pub_list <- list()
-    for (i in 1:nrow(x)) {
-      pub_list[[i]] <- make_pub(x[i,], index = i)
-    }
-    return(htmltools::HTML(paste(unlist(pub_list), collapse = "")))
+  x <- pubs[ which(pubs$category == category), ]
+  
+  # If there are no pubs in that category, return an empty HTML string
+  if (nrow(x) == 0) {
+    return(htmltools::HTML(""))
+  }
+  
+  # Pre-allocate and loop safely with seq_len()
+  pub_list <- vector("list", nrow(x))
+  for (i in seq_len(nrow(x))) {
+    pub_list[[i]] <- make_pub(x[i, ], index = i)
+  }
+  
+  htmltools::HTML(paste0(unlist(pub_list), collapse = ""))
 }
+
 
 make_pub <- function(pub, index = NULL) {
   header <- FALSE
-  altmetric <- make_altmetric(pub)
+  # altmetric <- make_altmetric(pub)
   if (is.null(index)) {
     cite <- pub$citation
     icons <- make_icons(pub)
@@ -103,44 +121,43 @@ make_pub <- function(pub, index = NULL) {
     icons <- glue::glue('<ul style="list-style: none;"><li>{make_icons(pub)}</li></ul>')
     if (index == 1) { header <- TRUE }
   }
-  # return(markdown_to_html(cite))
+  #### return(markdown_to_html(cite))
   return(htmltools::HTML(glue::glue(
     '<div class="pub">
-    <div class="grid">
-    <div class="g-col-11"> {markdown_to_html(cite)} </div>
-    <div class="g-col-1"> {altmetric} </div>
-    </div>
-    {icons}
-    </div>{make_haiku(pub, header)}'
+     <div class="grid">
+       <div class="g-col-12"> {markdown_to_html(cite)} </div>
+     </div>
+     {icons}
+   </div>'
   )))
 }
 
-make_altmetric <- function(pub) {
-  altmetric <- ""
-  if (pub$category == 'peer_reviewed') {
-    altmetric <- glue::glue('<div data-badge-type="donut" data-doi="{pub$doi}" data-hide-no-mentions="true" class="altmetric-embed"></div>')
-  }
-  return(altmetric)
-}
+# make_altmetric <- function(pub) {
+#   altmetric <- ""
+#   if (isTRUE(pub$category == "peer_reviewed")) {
+#     altmetric <- glue::glue('<div data-badge-type="donut" data-doi="{pub$doi}" data-hide-no-mentions="true" class="altmetric-embed"></div>')
+#   }
+#   return(altmetric)
+# }
 
-make_haiku <- function(pub, header = FALSE) {
-  html <- ""
-  haiku <- em(
-    pub$haiku1, HTML("&#8226;"), 
-    pub$haiku2, HTML("&#8226;"), 
-    pub$haiku3
-  )
-  if (!is.na(pub$haiku1)) {
-    if (header) {
-      html <- as.character(aside_center(list(
-        HTML("<b>Haiku Summary</b>"), br(), haiku))
-      )
-    } else {
-      html <- as.character(aside_center(list(haiku)))
-    }
-  }
-  return(html)
-}
+# make_haiku <- function(pub, header = FALSE) {
+#   html <- ""
+#   haiku <- em(
+#     pub$haiku1, HTML("&#8226;"), 
+#     pub$haiku2, HTML("&#8226;"), 
+#     pub$haiku3
+#   )
+#   if (!is.na(pub$haiku1)) {
+#     if (header) {
+#       html <- as.character(aside_center(list(
+#         HTML("<b>Haiku Summary</b>"), br(), haiku))
+#       )
+#     } else {
+#       html <- as.character(aside_center(list(haiku)))
+#     }
+#   }
+#   return(html)
+# }
 
 aside <- function(text) {
   return(tag("aside", list(text)))
@@ -179,59 +196,59 @@ markdown_to_html <- function(text) {
 
 make_icons <- function(pub) {
   html <- c()
-  if (pub$summary) {
+  # if (isTRUE(pub$summary)) {
+  #   html <- c(html, as.character(icon_link(
+  #     icon = "fas fa-external-link-alt",
+  #     text = "Summary",
+  #     url  = pub$url_summary, 
+  #     class = "icon-link-summary", 
+  #     target = "_self"
+  #   )))      
+  # }
+  if (isTRUE(!is.na(pub$url_pub) && nzchar(pub$url_pub))) {
     html <- c(html, as.character(icon_link(
       icon = "fas fa-external-link-alt",
-      text = "Summary",
-      url  = pub$url_summary, 
-      class = "icon-link-summary", 
-      target = "_self"
-    )))      
-  }
-  if (!is.na(pub$url_pub)) {
-    html <- c(html, as.character(icon_link(
-      icon = "fas fa-external-link-alt",
-      text = "View",
+      text = "Journal",
       url  = pub$url_pub
     )))
   }
-  if (!is.na(pub$url_pdf)) {
+  if (isTRUE(!is.na(pub$url_arXiv) && nzchar(pub$url_arXiv))) {
     html <- c(html, as.character(icon_link(
       icon = "fa fa-file-pdf",
-      text = "PDF",
-      url  = pub$url_pdf
+      text = "arXiv",
+      url  = pub$url_arXiv
     )))
   }
-  if (!is.na(pub$url_repo)) {
+  if (isTRUE(!is.na(pub$url_code) && nzchar(pub$url_code))) {
     html <- c(html, as.character(icon_link(
       icon = "fab fa-github",
-      text = "Code & Data",
-      url  = pub$url_repo
+      text = "Code",
+      url  = pub$url_code
     )))
   }
-  if (!is.na(pub$url_other)) {
-    html <- c(html, as.character(icon_link(
-      icon = "fas fa-external-link-alt",
-      text = pub$other_label,
-      url  = pub$url_other
-    )))
-  }
-  if (!is.na(pub$url_rg)) {
-    html <- c(html, as.character(icon_link(
-      icon = "ai ai-researchgate",
-      # text = "&nbsp;",
-      text = "RG",
-      url  = pub$url_rg
-    )))
-  }
-  if (!is.na(pub$url_scholar)) {
-    html <- c(html, as.character(icon_link(
-      icon = "ai ai-google-scholar",
-      # text = "&nbsp;",
-      text = "Scholar",
-      url  = pub$url_scholar
-    )))
-  }
+  # if (isTRUE(!is.na(pub$url_other) && nzchar(pub$url_other))) {
+  #   html <- c(html, as.character(icon_link(
+  #     icon = "fas fa-external-link-alt",
+  #     text = pub$other_label,
+  #     url  = pub$url_other
+  #   )))
+  # }
+  # if (isTRUE(!is.na(pub$url_rg) && nzchar(pub$url_rg))) {
+  #   html <- c(html, as.character(icon_link(
+  #     icon = "ai ai-researchgate",
+  #     # text = "&nbsp;",
+  #     text = "RG",
+  #     url  = pub$url_rg
+  #   )))
+  # }
+  # if (isTRUE(!is.na(pub$url_scholar) && nzchar(pub$url_scholar))) {
+  #   html <- c(html, as.character(icon_link(
+  #     icon = "ai ai-google-scholar",
+  #     # text = "&nbsp;",
+  #     text = "Scholar",
+  #     url  = pub$url_scholar
+  #   )))
+  # }
   return(paste(html, collapse = ""))
 }
 
@@ -240,11 +257,11 @@ make_icons <- function(pub) {
 # CSS and an optional target argument
 
 icon_link <- function(
-  icon = NULL,
-  text = NULL,
-  url = NULL,
-  class = "icon-link",
-  target = "_blank"
+    icon = NULL,
+    text = NULL,
+    url = NULL,
+    class = "icon-link",
+    target = "_blank"
 ) {
   if (!is.null(icon)) {
     text <- make_icon_text(icon, text)
@@ -272,14 +289,14 @@ last_updated <- function() {
   )
 }
 
-make_media_list <- function() {
-  media <- gsheet::gsheet2tbl(
-    url = 'https://docs.google.com/spreadsheets/d/1xyzgW5h1rVkmtO1rduLsoNRF9vszwfFZPd72zrNmhmU/edit#gid=2088158801')
-  temp <- media %>% 
-    mutate(
-      date = format(date, format = "%b %d, %Y"), 
-      outlet = paste0("**", outlet, "**"),
-      post = paste0("- ", date, " - ", outlet, ": ", post)
-    )
-  return(paste(temp$post, collapse = "\n"))
-}
+# make_media_list <- function() {
+#   media <- gsheet::gsheet2tbl(
+#     url = 'https://docs.google.com/spreadsheets/d/1xyzgW5h1rVkmtO1rduLsoNRF9vszwfFZPd72zrNmhmU/edit#gid=2088158801')
+#   temp <- media %>% 
+#     mutate(
+#       date = format(date, format = "%b %d, %Y"), 
+#       outlet = paste0("**", outlet, "**"),
+#       post = paste0("- ", date, " - ", outlet, ": ", post)
+#     )
+#   return(paste(temp$post, collapse = "\n"))
+# }

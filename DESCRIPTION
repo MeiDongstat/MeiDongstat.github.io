@@ -1,12 +1,11 @@
 Type: Website
-Package: jhelvy.com
-Title: John Paul Helveston
+Package: meidong.com
+Title: Mei Dong
 Authors@R: c(
-    person(given   = "John",
-           family  = "Helveston",
+    person(given   = "Mei",
+           family  = "Dong",
            role    = c("aut", "cre", "cph"),
-           email   = "john.helveston@gmail.com",
-           comment = c(ORCID = "0000-0002-2657-9191")))
+           email   = "may.dong@mail.utoronto.com"))
 Depends: R (>= 4.0.2)
 License: CC-BY-SA
 Encoding: UTF-8

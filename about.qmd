@@ -2,7 +2,7 @@
 title: "About"
 toc: true
 toc-location: left
-preview: images/john_dancing.jpg
+toc-title: "Content"
 lightbox: true
 execute: 
   echo: false
@@ -13,58 +13,112 @@ execute:
 source("_common.R")
 ```
 
-Welcome! I am a researcher, engineer, choice modeler, [{{< fa brands r-project >}}](https://www.r-project.org/about.html) developer, musician, swing dancer, and an Assistant Professor in the [Department of Engineering Management and Systems Engineering](http://emse.seas.gwu.edu/) at The George Washington University. See my [CV](cv.qmd) for more details.
+I am a PhD candidate in Biostatistics at The University of Toronto. See my [CV](https://drive.google.com/file/d/16cbtvPXwVsk1reVhhkkwvKViH0d4dUNc/view?usp=sharing) for more details.
 
-# Short Bio
+# Professional Experience
 
-John Paul (JP) is an Assistant Professor at George Washington University in the Department of Engineering Management and Systems Engineering. His [research](research.qmd) focuses on understanding how consumer preferences, market dynamics, and policy affect the emergence and adoption of low-carbon technologies, such as electric vehicles and renewable energy technologies. He also studies the critical relationship between the US and China in developing and mass producing these technologies. He has expertise in discrete choice modeling, conjoint analysis, survey design, exploratory data analysis, interview-based research methods, the R programming language, China, and the global electric vehicle industry. He speaks fluent Mandarin Chinese and has conducted extensive fieldwork in China. John holds a Ph.D. and M.S. in Engineering and Public Policy from Carnegie Mellon University and a B.S. in Engineering Science and Mechanics (ESM) from Virginia Tech.
+<ul class="positions-list">
+  <li>
+    <div class="position-name">Student Research Associate</div>
+    <div class="position-year">July 2022 – Present</div>
+    <div class="position-institution"> Dalla Lana School of Public Health, University of Toronto</div>
+  </li>
+  <li>
+    <div class="position-name">Teaching Assistant</div>
+    <div class="position-year">Sep 2021 – Present</div>
+    <div class="position-institution">University of Toronto</div>
+  </li>
+  <li>
+    <div class="position-name">Research Data Analyst</div>
+    <div class="position-year">May 2019 – June 2021</div>
+    <div class="position-institution">Dalla Lana School of Public Health, University of Toronto</div>
+  </li>
+  <li>
+    <div class="position-name">Research Assistant</div>
+    <div class="position-year">Sep 2018 - May 2019</div>
+    <div class="position-institution">University of Saskatchewan</div>
+  </li>
+    <li>
+    <div class="position-name">Teaching Assistant</div>
+    <div class="position-year">Sep 2017 - May 2019</div>
+    <div class="position-institution">University of Saskatchewan</div>
+  </li>
+</ul>
 
-# Brief Summary on My Research 
 
-My research focuses on understanding the factors influencing the development and adoption of emerging low-carbon technologies, particularly electric vehicles and solar PV panels.
+# Education
+<ul class="positions-list">
+   <li>
+   <div class="position-name">Ph.D. in Biostatistics</div> 
+   <div class="position-year">Sep 2021 - 2026 (Expected)</div>
+  <div class="position-institution">University of Toronto</div>
+   </li>
+  <li>
+   <div class="position-name">M.S. in Statistics</div> 
+   <div class="position-year">2017 - 2019</div>
+  <div class="position-institution">University of Saskatchewan</div>
+   </li>
+  <li>
+   <div class="position-name">B.S. in Statistics</div> 
+   <div class="position-year">Sep 2013 - 2017</div>
+  <div class="position-institution">Donghua University</div>
+   </li>
+</ul>
 
-Internationally, I have highlighted China’s crucial role as the leading global supplier of these technologies, as detailed in our 2019 publication in [_Science_](https://doi.org/10.1126/science.aaz1014). In a subsequent paper published in 2022 in [_Nature_](https://doi.org/10.1038/s41586-022-05316-6), we used two-factor engineering learning curve models to quantify billions of dollars in cost savings from rapid cost declines associated with high learning rates from a globalized solar PV supply chain, which is the reason solar is now the cheapest source of electricity in most parts of the world. This issue is central to informing ongoing international trade disputes and addressing climate change.
+# Honors and Awards
+<ul class="awards-list">
+  <li>
+    <span class="award-name">ASA early career travel grant</span>
+    <span class="award-year">2025</span>
+  </li>
+  <li>
+    <span class="award-name">General Student Research Oral Presentation Award</span>
+    <span class="award-year">SSC 2025</span>
+  </li>
+   <li>
+    <span class="award-name">Best Poster Award, Department of Statistics Research Day</span>
+    <span class="award-year">2025</span>
+  </li>
+   <li>
+    <span class="award-name">DSI Doctoral Student Fellowship</span>
+    <span class="award-year">2024-2027</span>
+  </li>
+   <li>
+    <span class="award-name">CANSSI SATGE Trainee</span>
+    <span class="award-year">2024-2026</span>
+  </li>
+   <li>
+    <span class="award-name">Winners in Case Studies Competition at SSC Annual Meeting</span>
+    <span class="award-year">SSC 2024</span>
+  </li>
+   <li>
+    <span class="award-name">SGS travel grant</span>
+    <span class="award-year">2024</span>
+  </li>
+   <li>
+    <span class="award-name">Queen Elizabeth II (Sanofi/John G. FitzGerald Graduate Scholarships in Science and Technology)</span>
+    <span class="award-year">2023</span>
+  </li>
+   <li>
+    <span class="award-name">SSC Student Travel Award</span>
+    <span class="award-year">2019</span>
+  </li>
+   <li>
+    <span class="award-name">Graduate Teaching Fellowship, University of Saskatchewan</span>
+    <span class="award-year">2017-2019</span>
+  </li>
+   <li>
+    <span class="award-name">Outstanding Graduate of Donghua University</span>
+    <span class="award-year">2017</span>
+  </li>
+  </ul>
 
-I have also extensively studied the EV industry, both in China and the U.S. In a paper published in [_Research Policy_](https://doi.org/10.1016/j.respol.2018.08.006), I analyzed how China's national and local institutions have interacted with industrial policy to foster a highly competitive environment for EV innovation, leading to the success of indigenous companies like BYD and Geely. In the U.S., my students and I leveraged tens of millions of online vehicle listings scraped from the web to quantify significant EV market trends, such as [how EVs are being used](https://doi.org/10.1016/j.joule.2023.09.015) and [how they are depreciating](https://doi.org/10.1088/1748-9326/ad3fce). I have also studied factors that affect people's willingness to buy an EV. In a paper published in [_Environmental Research Letters_](https://doi.org/10.1088/1748-9326/aba715), we found that direct experiences with EVs positively impact purchase intentions. In a [subsequent paper](https://doi.org/10.1088/1748-9326/ac7df3), we found that U.S. vehicle buyers overwhelmingly prefer immediate rebates at the point of sale, with this preference being particularly strong among lower-income households and used vehicle buyers. Our study was [referenced](https://www.politico.com/news/2023/10/06/treasury-biden-electric-vehicle-rebate-00120253) by the White House and the U.S. Department of Treasury as justification to support restructuring EV incentives to be applied at the point of sale, which was implemented in the 2022 Inflation Reduction Act.
 
-You can see more about my research on my [Research Page](research.qmd).
+# Services
+**Conference Organizing Committee**: The 13th Annual Canadian Statistics Student Conference (CSSC)
 
-# Open Source Software & {{< fa brands r-project >}}
+**Reviewer**:    Canadian Journal of Statistics
 
-<center>
-![Hex stickers for R packages and courses I've developed](images/hex/hex_logos.png){width=80% .external}
-</center>
+**Workshop**:
+Handling missing data in health science research. Data Science Interdisciplinary Research Cluster, Dalla Lana School of Public Health. Apr. 2023 / June 2022 
 
-I use and contribute to [{{< fa brands r-project >}}](https://www.r-project.org/about.html) in most of my research and teaching. One specific category of research is choice modeling. I use [choice-based conjoint](https://sawtoothsoftware.com/help/lighthouse-studio/manual/hid_web_whatcbc.html) surveys to measure people's preferences for a variety of technologies and policies. I have developed several packages for implementing conjoint in {{< fa brands r-project >}}, including [`{logitr}`](https://jhelvy.github.io/logitr/) for estimating multinomial and mixed logit models with preference space and "willingness-to-pay" space utility parameterizations, and [`{cbcTools}`](https://jhelvy.github.io/cbcTools/) for  designing and conducting power analyses for choice-based conjoint surveys. I also developed the [`{surveydown}`](https://surveydown.org/) package along with [Pingfan Hu](https://pingfanhu.com/) and Bogdan Bunea for making markdown-based surveys with Quarto shiny documents. I also co-authored the [`{renderthis}`](https://jhelvy.github.io/renderthis/) package with [Garrick Aden-Buie](https://www.garrickadenbuie.com/) for rendering media (e.g., [`xaringan`](https://github.com/yihui/xaringan) slides) into multiple different formats. Finally , I also [teach](teaching.html) multiple programming and data analytics courses in {{< fa brands r-project >}}, and all of my course materials are built using {{< fa brands r-project >}}, including course websites and slides.
-
-You can see more of my {{< fa brands r-project >}} projects and source code on my GitHub page: [https://github.com/jhelvy/](https://github.com/jhelvy/)
-
-# China & 中文
-
-<center>
-![John standing next to a Beijing roast duck mascot in Beijing in 2014](images/john_china_duck.jpg){width=70% .external}
-</center>
-
-I began studying Chinese during my second year as an undergraduate engineering student at Virginia Tech in the fall of 2006. The next spring, I received the Horton Scholarship, which provided a unique opportunity to travel to China and complete an educational project of my own design. I traveled to Dalian in the summer of 2008 to study language and culture at Liaoning Normal University, then I moved to Shanghai in the fall to gain international engineering experience as an intern in General Electric's Advanced Wind Turbine Operations division. The project opened my eyes to the many forces that shape the adoption of emerging technologies, in particular the importance of policy and economics. After returning to the U.S., I was awarded a [Critical Language Scholarship](http://clscholarship.org/) by the U.S. Department of State to study Chinese in Harbin, China during the summer of 2009, and I have since returned to China numerous times for work or research, including an internship at the [Innovation Center for Energy and Transportation (iCET)](http://icet.org.cn/english/index.asp) and as a 2014 [East Asia Pacific Summer Institutes (EAPSI)](http://www.nsf.gov/eapsi) Fellow supported by the U.S. National Science Foundation. Today, I continue to use my language skills and experience in China while conducting interdisciplinary research in China.
-
-# Swing Dancing
-
-<center>
-![John swing dancing in Beijing in 2016](images/john_dancing.jpg){width=70% .external}
-</center>
-
-Many of my closest friends know me first and foremost as a dancer. In the fall of 2006, I attended my first swing dance hosted by the Virginia Tech Swing Club [Soley Swing](https://gobblerconnect.vt.edu/organization/solelyswing), and swing dancing quickly became a major part of my life. I dance Lindy Hop, Balboa, Blues, and Charleston, and my dancing adventures have brought me to cities all over the world, including New York, Montreal, Boston, Washington D.C., Hong Kong, Beijing, Shanghai, Seoul, Pusan, Osaka, Taipei, and even on the [Great Wall of China](http://www.greatwallswingout.com/). Sharing the joy of swing dancing with friends and strangers all over the world is one of my greatest passions. I have competed internationally as a dancer, and my most accomplished achievement is winning 1st place in the Open Strictly Lindy Hop competition with my good friend Annabel Truesdell Quisao at the 2011 [International Lindy Hop Championship](https://ilhc.com/) in Washington, D.C.
-
-# Music
-
-<center>
-![John with his partner and violin after a concert at CMU in 2016](images/john_violin.jpg){width=60% .external}
-</center>
-
-Music was my earliest passion. I grew up playing piano, violin, and mandolin, and I have had the privilege of studying and performing with some incredible musicians. In high school I had the honor of studying violins with the legendary Dora Marshall Mullins of Virginia Beach, VA, and I have played in multiple ensembles, including the [Virginia Beach Symphony Orchestra](http://www.symphonicity.org/) (now "Symphonicity"), the [New River Valley Symphony](http://www.music.vt.edu/ensembles/nrvs/) at Virginia Tech, the [National Taiwan Normal University Symphony](https://www.music.ntnu.edu.tw/index.php/en/main/), and the [All University Orchestra](http://alluniversityorchestra.org/) at Carnegie Mellon University. I am also a self-taught mandolinist and guitarist and enjoy playing jazz and bluegrass. I have fortunately had many opportunities to play with some wonderful jazz friends, including the [Muddy Basin Ramblers](http://www.muddybasin.com/) (a New Orleans-style jazz band in Taipei) and the Hot Club of Beijing (a gypsy swing band based in China's capital).
-
-Thanks for visiting my site, and I am grateful for any feedback you may have!
-
-Cheers,
-
-John (章乐汉)

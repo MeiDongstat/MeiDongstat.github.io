@@ -13,7 +13,7 @@ source("_common.R")
 
 <br>
 <center>
-<img src="images/404-hippo.png" width=350>
+<img src="images/404.png" width=350>
 </center>
 
 # Whoops!
@@ -25,7 +25,7 @@ source("_common.R")
 ```{r}
 icon_link(
     text = "Return to home",
-    url  = "https://www.jhelvy.com"
+    url  = "https://meidong.com"
 )
 ```
 

@@ -7,32 +7,20 @@ project:
   render:
     - "index.qmd"
     - "about.qmd"
-    - "lab.qmd"
-    - "cv.qmd"
-    - "research.qmd"
     - "projects.qmd"
+    - "research.qmd"
     - "teaching.qmd"
-    - "blog/index.qmd"
-    - "blog/**/*.qmd"
-    - "research/**/*.qmd"
-    - "charts.qmd"
-    - "good-eats.qmd"
     - "404.qmd"
-    - "da-faq.qmd"
-    - "slides.qmd"
-    - "workshops.qmd"
-    - "!research/template.qmd"
   resources:
     - "content/"
     - "css"
-    - "splitkbcompare.html"
     - "static/"
 
 website:
-  title: "jhelvy.com"
-  description: "The personal website of John Paul Helveston"
-  image: images/lab/john_helveston_circle.png
-  site-url: https://www.jhelvy.com
+  title: "Mei Dong"
+  description: "The personal website of Mei Dong"
+  image: "images/lab/meidong.png"
+  site-url: https://meidong.com
   favicon: images/favicon/favicon.ico
   repo-url: https://github.com/jhelvy/jhelvy_quarto
   search:
@@ -42,11 +30,11 @@ website:
   google-analytics: "G-HQNG5WQE3X"
   open-graph:
     locale: es_ES
-    site-name: https://jhelvy.com
+    site-name: https://meidong.com
   twitter-card:
     creator: "@johnhelveston"
     site: "@johnhelveston"
-    image: images/lab/john_helveston_circle.png
+    image: images/meidong.png
     card-style: summary  
     image-height: 150
     image-width: 150
@@ -54,26 +42,22 @@ website:
     right:
       - text: "About"
         href: about.qmd
-      - text: "Lab"
-        href: lab.qmd
-      - text: "Research"
+      - text: "Publications"
         href: research.qmd
       - text: "Teaching"
         href: teaching.qmd
-      - text: "Projects"
-        href: projects.qmd
-      - text: "Blog"
-        href: blog/index.qmd
   page-footer:
     center:
-      - text: "<a href='https://www.jhelvy.com/cv.html'>CV</a> &nbsp;<a href='https://github.com/jhelvy' target='blank'><i class='bi bi-github'></i></a> &nbsp;<a href='https://bsky.app/profile/jhelvy.bsky.social' target='blank'><i class='fa fa-brands fa-bluesky'></i></a> &nbsp;<a href='https://www.linkedin.com/in/jhelvy' target='blank'><i class='bi bi-linkedin'></i></a> &nbsp;<a href='https://scholar.google.com/citations?user=DY2D56IAAAAJ' target='blank'><i class='ai ai-google-scholar fa-lg'></i></a> &nbsp;<a href='https://www.researchgate.net/profile/John_Helveston' target='blank'><i class='ai ai-researchgate fa-lg'></i></a> &nbsp;<a href='https://orcid.org/0000-0002-2657-9191' target='blank'><i class='ai ai-orcid fa-lg'></i></a><br>Site made with <i class='bi bi-heart-fill'></i>, <a href='https://github.com/jhelvy/jhelvy_quarto' target='_blank'><i class='bi bi-git'></i></a>, and <a href='https://quarto.org/' target='_blank'><img src='https://quarto.org/favicon.png' width=12> quarto</a><br>© 2024 John Paul Helveston"
+      - text: "<a href='https://www.jhelvy.com/cv.html'>CV</a> &nbsp;<a href='https://github.com/MeiDongstat' target='blank'><i class='bi bi-github'></i></a> &nbsp;<a href='https://www.linkedin.com/in/mei-dong-297392128/' target='blank'><i class='bi bi-linkedin'></i></a> &nbsp;<a href='https://scholar.google.com/citations?user=L--4tCAAAAAJ&hl=en  ' target='blank'><i class='ai ai-google-scholar fa-lg'></i></a> &nbsp;<a href='https://www.researchgate.net/profile/Mei-Dong-8?ev=hdr_xprf' target='blank'><i class='ai ai-researchgate fa-lg'></i></a> &nbsp;<a href='https://orcid.org/my-orcid?orcid=0000-0003-1735-5361' target='blank'><i class='ai ai-orcid fa-lg'></i></a><br>Site made with quarto</a><br>© 2025 Mei Dong"
 
 format:
   html:
-    theme: [default, css/theme.scss]
+    theme:
+      - Yeti                # ← pick any built-in Bootswatch theme, e.g. cosmo, flatly, journal, spacelab…
+      - css/theme.scss       # ← your custom overrides (SCSS) layer on top
     anchor-sections: true
     smooth-scroll: true
     link-external-newwindow: true
     link-external-icon: false
-    # This is to include fontawesome and academic icons in the headers:
     include-in-header: "_includes/header.html"
+
