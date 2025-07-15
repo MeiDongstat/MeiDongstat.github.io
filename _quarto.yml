@@ -58,6 +58,5 @@ format:
     link-external-newwindow: true
     link-external-icon: false
     # This is to include fontawesome and academic icons in the headers:
-    include-in-header: 
-      - "_includes/header.html"
+    include-in-header: "_includes/header.html"
 
