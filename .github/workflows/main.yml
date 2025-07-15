@@ -1,5 +1,9 @@
 name: Render and Publish Quarto Site
 
+permissions:
+  contents:write
+  pages:write
+  
 on:
   push:
     branches: [ main, master ]
@@ -19,6 +23,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true 
 
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
