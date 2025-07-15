@@ -20,8 +20,8 @@ website:
   title: "Mei Dong"
   description: "The personal website of Mei Dong"
   image: "images/meidong.png"
-  site-url: https://meidongstat.github.io/MeiDong/
-  repo-url: https://meidongstat.github.io/MeiDong/
+  site-url: https://MeiDongstat.github.io/
+  repo-url: https://github.com/MeiDongstat/MeiDongstat.github.io
   search:
     location: navbar
     type: overlay
@@ -29,7 +29,7 @@ website:
   google-analytics: "G-HQNG5WQE3X"
   open-graph:
     locale: es_ES
-    site-name: https://meidongstat.github.io/MeiDong/
+    site-name: https://MeiDongstat.github.io
   twitter-card:
     creator: "@meidong"
     site: "@meidong"
@@ -51,12 +51,10 @@ website:
 
 format:
   html:
-    theme:
-      - Yeti                # ← pick any built-in Bootswatch theme, e.g. cosmo, flatly, journal, spacelab…
-      - css/theme.scss       # ← your custom overrides (SCSS) layer on top
+    theme: [default, css/theme.scss]
     anchor-sections: true
     smooth-scroll: true
     link-external-newwindow: true
     link-external-icon: false
+    # This is to include fontawesome and academic icons in the headers:
     include-in-header: "_includes/header.html"
-
