@@ -19,9 +19,8 @@ project:
 website:
   title: "Mei Dong"
   description: "The personal website of Mei Dong"
-  image: "images/lab/meidong.png"
+  image: "images/meidong.png"
   site-url: https://meidongstat.github.io/MeiDong/
-  favicon: images/favicon/favicon.ico
   repo-url: https://meidongstat.github.io/MeiDong/
   search:
     location: navbar

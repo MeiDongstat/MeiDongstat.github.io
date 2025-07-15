@@ -1,6 +1,6 @@
 ---
 title: "Mei Dong  (董玫)"
-image: "images/lab/meidong.png"
+image: "images/meidong.png"
 page-layout: full
 execute: 
   echo: false
