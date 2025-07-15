@@ -1,1 +1,1 @@
-Sitemap: https://meidongstat.github.io/MeiDong/sitemap.xml
+Sitemap: https://MeiDongstat.github.io/sitemap.xml
