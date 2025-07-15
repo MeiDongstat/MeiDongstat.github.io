@@ -21,6 +21,7 @@ website:
   description: "The personal website of Mei Dong"
   image: "images/meidong.png"
   site-url: https://MeiDongstat.github.io/
+  favicon: imagine/favicon.ico
   repo-url: https://github.com/MeiDongstat/MeiDongstat.github.io
   search:
     location: navbar
@@ -59,4 +60,4 @@ format:
     # This is to include fontawesome and academic icons in the headers:
     include-in-header: 
       - "_includes/header.html"
-      - "_includes/no-favicon.html" 
+
