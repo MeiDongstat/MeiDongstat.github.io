@@ -21,7 +21,7 @@ website:
   description: "The personal website of Mei Dong"
   image: "images/meidong.png"
   site-url: https://MeiDongstat.github.io/
-  favicon: imagine/favicon.ico
+  favicon: images/favicon.png
   repo-url: https://github.com/MeiDongstat/MeiDongstat.github.io
   search:
     location: navbar
