@@ -52,10 +52,11 @@ website:
 format:
   html:
     theme: [default, css/theme.scss]
-    favicon: "static/favicon.png"
     anchor-sections: true
     smooth-scroll: true
     link-external-newwindow: true
     link-external-icon: false
     # This is to include fontawesome and academic icons in the headers:
-    include-in-header: "_includes/header.html"
+    include-in-header: 
+      - "_includes/header.html"
+      - "_includes/no-favicon.html" 
