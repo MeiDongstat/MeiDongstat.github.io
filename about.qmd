@@ -68,7 +68,7 @@ I am currently a PhD candidate in Biostatistics at The University of Toronto. Be
 # Honors and Awards
 <ul class="awards-list">
   <li>
-    <span class="award-name">ASA early career travel grant</span>
+    <span class="award-name">JSM early career travel grant</span>
     <span class="award-year">2025</span>
   </li>
   <li>
