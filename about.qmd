@@ -50,17 +50,17 @@ I am currently a PhD candidate in Biostatistics at The University of Toronto. Be
 <ul class="positions-list">
    <li>
    <div class="position-name">Ph.D. in Biostatistics</div> 
-   <div class="position-year">Sep 2021 - 2026 (Expected)</div>
+   <div class="position-year">Sep 2021 - Aug 2026 (Expected)</div>
   <div class="position-institution">University of Toronto</div>
    </li>
   <li>
    <div class="position-name">M.S. in Statistics</div> 
-   <div class="position-year">2017 - 2019</div>
+   <div class="position-year"> Sep 2017 - Jun 2019</div>
   <div class="position-institution">University of Saskatchewan</div>
    </li>
   <li>
    <div class="position-name">B.S. in Statistics</div> 
-   <div class="position-year">Sep 2013 - 2017</div>
+   <div class="position-year">Sep 2013 - Jun 2017</div>
   <div class="position-institution">Donghua University</div>
    </li>
 </ul>
