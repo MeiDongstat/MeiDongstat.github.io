@@ -97,7 +97,7 @@ I am currently a PhD candidate in Biostatistics at The University of Toronto. Be
   </li>
    <li>
     <span class="award-name">Queen Elizabeth II (Sanofi/John G. FitzGerald Graduate Scholarships in Science and Technology)</span>
-    <span class="award-year">2023</span>
+    <span class="award-year">2023-2024, 2025-2026</span>
   </li>
    <li>
     <span class="award-name">SSC Student Travel Award</span>
