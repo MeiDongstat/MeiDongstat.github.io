@@ -117,7 +117,7 @@ I am currently a PhD candidate in Biostatistics at The University of Toronto. Be
 # Services
 **Conference Organizing Committee**: The 13th Annual Canadian Statistics Student Conference (CSSC)
 
-**Reviewer**:    Canadian Journal of Statistics
+**Reviewer**:    Canadian Journal of Statistics; University of Toronto Journal of Public Health（UTJPH）
 
 **Workshop**:
 Handling missing data in health science research. Data Science Interdisciplinary Research Cluster, Dalla Lana School of Public Health. Apr. 2023 / June 2022 
