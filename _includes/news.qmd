@@ -5,6 +5,6 @@
 ::: {.news-list}
 - **Jul 2026** — I recently presented my work, *Average Treatment Effect Estimation with Non-binary Instrumental Variables*, at the 8th Pacific Causal Inference Conference (PCIC).
 - **Jul 2026** — I am teaching a session on *Semiparametric Debiased Estimation* at the Biostatistics Summer School, Peking University.
-- **Apr 2026** — I received the NSERC Postdoctoral Fellowship.
+- **Apr 2026** — I am deeply honored to receive the NSERC Postdoctoral Fellowship, which will support my postdoctoral research for two years.
 - **Apr 2026** — Our discussion paper, *Order Dependence in Regression by Composition*, was published in the *Journal of the Royal Statistical Society Series B (JRSSB)*. [DOI](https://doi.org/10.1093/jrsssb/qkag093) · [arXiv](https://arxiv.org/abs/2604.18388)
 :::
