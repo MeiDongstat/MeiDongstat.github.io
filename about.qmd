@@ -54,7 +54,7 @@ I am a PhD candidate in Biostatistics at the University of Toronto. Below is a b
 # Honors and Awards
 
 <ul class="awards-list">
-  <li><span class="award-name">NSERC Postdoctoral Fellowship</span><span class="award-year">2026</span></li>
+  <li><span class="award-name">NSERC Postdoctoral Fellowship</span><span class="award-year">Apr 2026</span></li>
   <li><span class="award-name">ICSA-Canada Chapter Symposium Student/Postdoc Travel Scholarship</span><span class="award-year">2026</span></li>
   <li><span class="award-name">IMS Hannan Graduate Student Travel Award</span><span class="award-year">2026</span></li>
   <li><span class="award-name">Joint Statistical Meetings Early Career Travel Award</span><span class="award-year">Jun 2025</span></li>
