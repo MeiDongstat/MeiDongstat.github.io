@@ -81,28 +81,6 @@ I am a PhD candidate in Biostatistics at the University of Toronto. Below is a b
 - **Conference Organizing Committee, Fundraising**, 13th Annual Canadian Statistics Student Conference — Sep 2024–May 2025
 - **Reviewer** — *Journal of the Royal Statistical Society Series A*; *Canadian Journal of Statistics*; *Sociological Methods & Research*; *University of Toronto Journal of Public Health*
 
-# Invited Talks
-
-- **Jul 2026** — 8th Pacific Causal Inference Conference, Tianjin, China
-- **May 2026** — 39th New England Statistics Symposium, Storrs, Connecticut, USA
-
-# Presentations
-
-- **Apr 2026** — European Causal Inference Meeting, Oxford, UK
-- **Apr 2026** — Brown Bag Seminar, University of Toronto, Toronto, Canada
-- **Feb 2026** — Center for Causal Inference Seminar, University of Pennsylvania, virtual
-- **Dec 2025** — ICSA International Conference, poster, Taipei, Taiwan
-- **Oct 2025** — DSI Causal Inference Workshop, poster, Toronto, Canada
-- **Aug 2025** — Joint Statistical Meetings, Nashville, USA
-- **May 2025** — Statistical Society of Canada Annual Meeting, Saskatoon, Canada
-- **Apr 2025** — University of Toronto Department of Statistics Research Day, poster, Toronto, Canada
-- **Mar 2025** — ENAR Spring Meeting, New Orleans, USA
-- **Jun 2024** — Statistical Society of Canada Annual Meeting, St. John's, Canada
-- **Aug 2023** — Joint Statistical Meetings, Toronto, Canada
-- **May 2022** — Statistical Society of Canada Annual Meeting, virtual
-- **May 2022** — University of Toronto Division of Biostatistics Research Day, poster, virtual
-- **May 2019** — Statistical Society of Canada Annual Meeting, Calgary, Canada
-
 # Professional Development
 
 - **Apr 2026** — INI Workshop on Causal Inference in Biomedicine, University of Cambridge
