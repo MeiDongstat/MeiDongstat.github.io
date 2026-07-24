@@ -4,121 +4,108 @@ toc: true
 toc-location: left
 toc-title: "Content"
 lightbox: true
-execute: 
+execute:
   echo: false
   warning: false
 ---
 
-```{r setup}
-source("_common.R")
-```
+I am a PhD candidate in Biostatistics at the University of Toronto. Below is a brief overview of my background. See my [CV](/files/Mei_Dong_CV.pdf) for more details.
 
-I am currently a PhD candidate in Biostatistics at The University of Toronto. Below is a berif overview of my background. See my [CV](https://drive.google.com/file/d/16cbtvPXwVsk1reVhhkkwvKViH0d4dUNc/view?usp=sharing) for more details.
+# Education
+
+<ul class="positions-list">
+  <li>
+    <div class="position-name">Ph.D. in Biostatistics</div>
+    <div class="position-year">2021–Present</div>
+    <div class="position-institution">University of Toronto · Advisors: Wei Xu and Linbo Wang</div>
+  </li>
+  <li>
+    <div class="position-name">M.S. in Statistics</div>
+    <div class="position-year">Sep 2017–Jun 2019</div>
+    <div class="position-institution">University of Saskatchewan · Advisors: Longhai Li and Lloyd Balbuena</div>
+  </li>
+  <li>
+    <div class="position-name">B.S. in Statistics</div>
+    <div class="position-year">Sep 2013–Jun 2017</div>
+    <div class="position-institution">Donghua University · Advisor: Xin Liu</div>
+  </li>
+</ul>
 
 # Professional Experience
 
 <ul class="positions-list">
   <li>
     <div class="position-name">Student Research Associate</div>
-    <div class="position-year">July 2022 – Present</div>
-    <div class="position-institution"> Dalla Lana School of Public Health, University of Toronto</div>
-  </li>
-  <li>
-    <div class="position-name">Teaching Assistant</div>
-    <div class="position-year">Sep 2021 – Present</div>
-    <div class="position-institution">University of Toronto</div>
+    <div class="position-year">Jul 2022–Dec 2025</div>
+    <div class="position-institution">Dalla Lana School of Public Health, University of Toronto</div>
   </li>
   <li>
     <div class="position-name">Research Data Analyst</div>
-    <div class="position-year">May 2019 – June 2021</div>
+    <div class="position-year">May 2019–Jun 2021</div>
     <div class="position-institution">Dalla Lana School of Public Health, University of Toronto</div>
   </li>
   <li>
     <div class="position-name">Research Assistant</div>
-    <div class="position-year">Sep 2018 - May 2019</div>
+    <div class="position-year">Sep 2018–May 2019</div>
     <div class="position-institution">University of Saskatchewan</div>
   </li>
-    <li>
-    <div class="position-name">Teaching Assistant</div>
-    <div class="position-year">Sep 2017 - May 2019</div>
-    <div class="position-institution">University of Saskatchewan</div>
-  </li>
-</ul>
-
-
-# Education
-<ul class="positions-list">
-   <li>
-   <div class="position-name">Ph.D. in Biostatistics</div> 
-   <div class="position-year">Sep 2021 - Aug 2026 (Expected)</div>
-  <div class="position-institution">University of Toronto</div>
-   </li>
-  <li>
-   <div class="position-name">M.S. in Statistics</div> 
-   <div class="position-year"> Sep 2017 - Jun 2019</div>
-  <div class="position-institution">University of Saskatchewan</div>
-   </li>
-  <li>
-   <div class="position-name">B.S. in Statistics</div> 
-   <div class="position-year">Sep 2013 - Jun 2017</div>
-  <div class="position-institution">Donghua University</div>
-   </li>
 </ul>
 
 # Honors and Awards
+
 <ul class="awards-list">
-  <li>
-    <span class="award-name">JSM early career travel grant</span>
-    <span class="award-year">2025</span>
-  </li>
-  <li>
-    <span class="award-name">General Student Research Oral Presentation Award</span>
-    <span class="award-year">SSC 2025</span>
-  </li>
-   <li>
-    <span class="award-name">Best Poster Award, Department of Statistics Research Day</span>
-    <span class="award-year">2025</span>
-  </li>
-   <li>
-    <span class="award-name">DSI Doctoral Student Fellowship</span>
-    <span class="award-year">2024-2027</span>
-  </li>
-   <li>
-    <span class="award-name">CANSSI SATGE Trainee</span>
-    <span class="award-year">2024-2026</span>
-  </li>
-   <li>
-    <span class="award-name">Winners in Case Studies Competition at SSC Annual Meeting</span>
-    <span class="award-year">SSC 2024</span>
-  </li>
-   <li>
-    <span class="award-name">SGS travel grant</span>
-    <span class="award-year">2024</span>
-  </li>
-   <li>
-    <span class="award-name">Queen Elizabeth II (Sanofi/John G. FitzGerald Graduate Scholarships in Science and Technology)</span>
-    <span class="award-year">2023-2024, 2025-2026</span>
-  </li>
-   <li>
-    <span class="award-name">SSC Student Travel Award</span>
-    <span class="award-year">2019</span>
-  </li>
-   <li>
-    <span class="award-name">Graduate Teaching Fellowship, University of Saskatchewan</span>
-    <span class="award-year">2017-2019</span>
-  </li>
-   <li>
-    <span class="award-name">Outstanding Graduate of Donghua University</span>
-    <span class="award-year">2017</span>
-  </li>
-  </ul>
+  <li><span class="award-name">NSERC Postdoctoral Fellowship</span><span class="award-year">2026</span></li>
+  <li><span class="award-name">ICSA-Canada Chapter Symposium Student/Postdoc Travel Scholarship</span><span class="award-year">2026</span></li>
+  <li><span class="award-name">IMS Hannan Graduate Student Travel Award</span><span class="award-year">2026</span></li>
+  <li><span class="award-name">Joint Statistical Meetings Early Career Travel Award</span><span class="award-year">Jun 2025</span></li>
+  <li><span class="award-name">General Student Research Oral Presentation Award, SSC Annual Meeting</span><span class="award-year">May 2025</span></li>
+  <li><span class="award-name">Best Poster Award, University of Toronto Department of Statistics Research Day</span><span class="award-year">Apr 2025</span></li>
+  <li><span class="award-name">Winner, SSC Case Study Competition</span><span class="award-year">Jun 2024</span></li>
+  <li><span class="award-name">CANSSI STAGE Trainee</span><span class="award-year">2024–2026</span></li>
+  <li><span class="award-name">DSI Doctoral Student Fellowship</span><span class="award-year">2024–2027</span></li>
+  <li><span class="award-name">University of Toronto SGS Travel Grant</span><span class="award-year">May 2024</span></li>
+  <li><span class="award-name">Queen Elizabeth II (Sanofi/John G. FitzGerald) Graduate Scholarship in Science and Technology</span><span class="award-year">2023–2024, 2025–2026</span></li>
+  <li><span class="award-name">University of Toronto Fellowships</span><span class="award-year">2021–2023</span></li>
+  <li><span class="award-name">Statistical Society of Canada Annual Meeting Student Travel Grant</span><span class="award-year">May 2019</span></li>
+  <li><span class="award-name">University of Saskatchewan Student Travel Award</span><span class="award-year">May 2019</span></li>
+  <li><span class="award-name">Graduate Teaching Fellowship, University of Saskatchewan</span><span class="award-year">2017–2019</span></li>
+  <li><span class="award-name">Donghua University Outstanding Graduate</span><span class="award-year">Jun 2017</span></li>
+  <li><span class="award-name">Donghua University First Class Tianji Academic Excellence Scholarship</span><span class="award-year">2014–2016</span></li>
+  <li><span class="award-name">Outstanding Student Scholarship, Donghua University</span><span class="award-year">2015–2016</span></li>
+  <li><span class="award-name">Donghua University Outstanding Student Leader</span><span class="award-year">Sep 2014</span></li>
+</ul>
 
+# Academic Service
 
-# Services
-**Conference Organizing Committee**: The 13th Annual Canadian Statistics Student Conference (CSSC)
+- **Conference Photography Volunteer**, 13th Annual Canadian Statistics Student Conference — May 2025
+- **Conference Organizing Committee, Fundraising**, 13th Annual Canadian Statistics Student Conference — Sep 2024–May 2025
+- **Reviewer** — *Journal of the Royal Statistical Society Series A*; *Canadian Journal of Statistics*; *Sociological Methods & Research*; *University of Toronto Journal of Public Health*
 
-**Reviewer**: Canadian Journal of Statistics; University of Toronto Journal of Public Health（UTJPH）
+# Invited Talks
 
-**Workshop**:
-Handling missing data in health science research. Data Science Interdisciplinary Research Cluster, Dalla Lana School of Public Health. Apr. 2023 / June 2022 
+- **Jul 2026** — 8th Pacific Causal Inference Conference, Tianjin, China
+- **May 2026** — 39th New England Statistics Symposium, Storrs, Connecticut, USA
 
+# Presentations
+
+- **Apr 2026** — European Causal Inference Meeting, Oxford, UK
+- **Apr 2026** — Brown Bag Seminar, University of Toronto, Toronto, Canada
+- **Feb 2026** — Center for Causal Inference Seminar, University of Pennsylvania, virtual
+- **Dec 2025** — ICSA International Conference, poster, Taipei, Taiwan
+- **Oct 2025** — DSI Causal Inference Workshop, poster, Toronto, Canada
+- **Aug 2025** — Joint Statistical Meetings, Nashville, USA
+- **May 2025** — Statistical Society of Canada Annual Meeting, Saskatoon, Canada
+- **Apr 2025** — University of Toronto Department of Statistics Research Day, poster, Toronto, Canada
+- **Mar 2025** — ENAR Spring Meeting, New Orleans, USA
+- **Jun 2024** — Statistical Society of Canada Annual Meeting, St. John's, Canada
+- **Aug 2023** — Joint Statistical Meetings, Toronto, Canada
+- **May 2022** — Statistical Society of Canada Annual Meeting, virtual
+- **May 2022** — University of Toronto Division of Biostatistics Research Day, poster, virtual
+- **May 2019** — Statistical Society of Canada Annual Meeting, Calgary, Canada
+
+# Professional Development
+
+- **Apr 2026** — INI Workshop on Causal Inference in Biomedicine, University of Cambridge
+- **Mar 2026** — INI Workshop on Causal Identification and Discovery, University of Cambridge
+- **Jan 2026** — Sanya Workshop on Causality and Machine Learning, Yau Mathematical Sciences Center, Tsinghua University
+- **Jun 2018** — AARMS Summer School: *Statistical Learning for High-Dimensional Data, Machine Learning and Data Mining*, University of Prince Edward Island

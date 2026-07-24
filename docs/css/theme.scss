@@ -11,7 +11,7 @@ $secondary-color-trans: rgba(86, 167, 84, 0.2);
 $tertiary-color: #A77B54;
 $link-color: $primary-color;
 $body-bg: #FFFEF9;
-$body-color: $primary-color-dark;
+$body-color: #2E2923;
 $footer-bg: $primary-color;
 $footer-fg: white;
 $navbar-bg: $body-bg;
@@ -20,7 +20,7 @@ $navbar-hl: $secondary-color;
 $dropdown-link-color: $primary-color;
 $navbar-font-family: "Raleway";
 $headings-font-family: "Raleway";
-$headings-color: $primary-color-dark;
+$headings-color: #2E2923;
 $font-family-base: "Raleway";
 $code-block-bg: white;
 $code-block-border: false;
@@ -44,6 +44,7 @@ $pagination-active-border-color: $primary-color;
 
 body {
   font-family: "Roboto", $font-family-base, sans-serif;
+  font-weight: 500;
 }
 div.quarto-post .metadata {
   font-family: "Roboto", $font-family-base, sans-serif;
@@ -57,6 +58,18 @@ h1, .h1, h2, .h2, h3, .h3 {
   font-family: "Roboto", $font-family-base, sans-serif;
   font-weight: 700;
   font-size: 2rem; 
+}
+
+.news-list {
+  margin-top: 0.5rem;
+}
+
+.news-list ul {
+  padding-left: 1.2rem;
+}
+
+.news-list li {
+  margin-bottom: 0.65rem;
 }
 
 div.quarto-about-trestles .about-entity .about-link {
@@ -337,5 +350,19 @@ pre {
 .positions-list .position-institution {
   grid-area: institution;
   font-style: italic;
-  color: #555;
+  color: $body-color;
+}
+
+@media (max-width: 576px) {
+  .awards-list li,
+  .positions-list li {
+    display: block;
+  }
+
+  .awards-list .award-year,
+  .positions-list .position-year {
+    display: block;
+    margin-top: 0.15rem;
+    white-space: normal;
+  }
 }

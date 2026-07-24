@@ -10,23 +10,8 @@ Depends: R (>= 4.0.2)
 License: CC-BY-SA
 Encoding: UTF-8
 Imports:
-    bs4cards,
-    cowplot,
     glue,
-    gsheet,
-    here,
     htmltools,
-    janitor,
-    kableExtra,
     knitr,
     markdown,
-    remotes,
-    rmarkdown,
-    roxygen2,
-    shiny,
-    shinylive,
-    surveydown,
-    tidyverse,
-    tinytable,
-    viridis,
-    xaringanExtra
+    readr

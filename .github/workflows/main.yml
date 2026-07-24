@@ -47,9 +47,7 @@ jobs:
 
       - name: Install R dependencies
         run: |
-          install.packages("stringi", configure.args = "--with-icudt-system=yes")
           remotes::install_deps(dependencies = TRUE)
-          install.packages("pkgdown")  # Removed "type = binary" as we're on Ubuntu
         shell: Rscript {0}
 
       - name: Set up Quarto

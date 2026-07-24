@@ -12,7 +12,7 @@ about:
   id: hero-heading
   links:
     - text: '<i class="ai ai-cv fa-lg"></i>'
-      href: https://drive.google.com/file/d/16cbtvPXwVsk1reVhhkkwvKViH0d4dUNc/view?usp=sharing
+      href: files/Mei_Dong_CV.pdf
     - icon: linkedin
       aria-label: "LinkedIn"
       href: https://www.linkedin.com/in/mei-dong-297392128/
@@ -20,7 +20,7 @@ about:
       aria-label: GitHub
       href: https://github.com/MeiDongstat
     - text: '<i class="ai ai-orcid fa-lg"></i>'
-      href: https://orcid.org/my-orcid?orcid=0000-0003-1735-5361
+      href: https://orcid.org/0000-0003-1735-5361
     - text: '<i class="ai ai-google-scholar fa-lg"></i>'
       aria-label: "Google Scholar"
       href: https://scholar.google.com/citations?user=L--4tCAAAAAJ&hl=en  
@@ -28,18 +28,15 @@ about:
       href: https://www.researchgate.net/profile/Mei-Dong-8?ev=hdr_xprf
 ---
 
-```{r setup}
-source("_common.R")
-```
-
-
 ::: {#hero-heading}
 
 
-I am a PhD candidate in Biostatistics at the [University of Toronto](https://www.dlsph.utoronto.ca/division/biostatistics/), where I am fortunate to be supervised by Prof. [Wei Xu](https://www.dlsph.utoronto.ca/faculty-profile/xu-wei/) and Prof. [Linbo Wang](https://sites.google.com/site/linbowangpku/home). I am also a DSI Doctoral Student fellow and a CANSSI STAGE trainee. My research interest is in causal inference, statistical genetics and genomics, with applications to health‑related data. 
+I am a PhD candidate in Biostatistics at the [University of Toronto](https://www.dlsph.utoronto.ca/division/biostatistics/), where I am fortunate to be supervised by Prof. [Wei Xu](https://www.dlsph.utoronto.ca/faculty-profile/xu-wei/) and Prof. [Linbo Wang](https://sites.google.com/site/linbowangpku/home). I am also a DSI Doctoral Student Fellow and a CANSSI STAGE trainee. My research interests include causal inference, statistical genetics, and genomics, with applications to health-related data.
 
-Before beginning my PhD, I worked as a research data analyst in the Division of Biostatistics at the University of Toronto, collaborating closely with clinicians from Princess Margaret Hospital and Mount Sinai Hospital. There, I contributed to both statistical methodological development and applied studies—particularly in inflammatory bowel disease and lung cancer related data. Along the way, I found my interest in causal inference and identied some critical research gaps, ultimately motivated my doctoral studies.
+Before beginning my PhD, I worked as a research data analyst in the Division of Biostatistics at the University of Toronto, collaborating closely with clinicians from Princess Margaret Cancer Centre and Mount Sinai Hospital. I contributed to methodological and applied research, particularly studies involving inflammatory bowel disease and lung cancer data. This work deepened my interest in causal inference and identified research questions that ultimately motivated my doctoral studies.
 
-Outside of research, I enjoy photography, tennis, and swimming. Most recently, I served as the official photographer for CSSC 2025 in Saskatoon.   
+Outside of research, I enjoy photography, tennis, and swimming. Most recently, I served as a conference photography volunteer for CSSC 2025 in Saskatoon.
+
+{{< include _includes/news.qmd >}}
 
 :::

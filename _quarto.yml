@@ -7,20 +7,20 @@ project:
   render:
     - "index.qmd"
     - "about.qmd"
-    - "projects.qmd"
     - "research.qmd"
     - "teaching.qmd"
     - "404.qmd"
   resources:
     - "content/"
     - "css"
+    - "files/"
     - "static/"
 
 website:
   title: "Mei Dong"
   description: "The personal website of Mei Dong"
   image: "images/meidong.png"
-  site-url: https://MeiDongstat.github.io/
+  site-url: https://meidongstat.github.io/
   favicon: images/favicon.png
   repo-url: https://github.com/MeiDongstat/MeiDongstat.github.io
   search:
@@ -29,15 +29,8 @@ website:
   back-to-top-navigation: false
   google-analytics: "G-1H11LJWRC8"
   open-graph:
-    locale: es_ES
-    site-name: https://MeiDongstat.github.io
-  twitter-card:
-    creator: "@meidong"
-    site: "@meidong"
-    image: images/meidong.png
-    card-style: summary  
-    image-height: 150
-    image-width: 150
+    locale: en_CA
+    site-name: Mei Dong
   navbar:
     right:
       - text: "About"
@@ -48,7 +41,7 @@ website:
         href: teaching.qmd
   page-footer:
     center:
-      - text: "<a href='https://drive.google.com/file/d/16cbtvPXwVsk1reVhhkkwvKViH0d4dUNc/view?usp=sharing'>CV</a> &nbsp;<a href='https://github.com/MeiDongstat' target='blank'><i class='bi bi-github'></i></a> &nbsp;<a href='https://www.linkedin.com/in/mei-dong-297392128/' target='blank'><i class='bi bi-linkedin'></i></a> &nbsp;<a href='https://scholar.google.com/citations?user=L--4tCAAAAAJ&hl=en  ' target='blank'><i class='ai ai-google-scholar fa-lg'></i></a> &nbsp;<a href='https://www.researchgate.net/profile/Mei-Dong-8?ev=hdr_xprf' target='blank'><i class='ai ai-researchgate fa-lg'></i></a> &nbsp;<a href='https://orcid.org/my-orcid?orcid=0000-0003-1735-5361' target='blank'><i class='ai ai-orcid fa-lg'></i></a><br>Site made with quarto</a><br>© 2025 Mei Dong"
+      - text: "<a href='/files/Mei_Dong_CV.pdf'>CV</a> &nbsp;<a href='https://github.com/MeiDongstat' target='_blank'><i class='bi bi-github'></i></a> &nbsp;<a href='https://www.linkedin.com/in/mei-dong-297392128/' target='_blank'><i class='bi bi-linkedin'></i></a> &nbsp;<a href='https://scholar.google.com/citations?user=L--4tCAAAAAJ&hl=en' target='_blank'><i class='ai ai-google-scholar fa-lg'></i></a> &nbsp;<a href='https://www.researchgate.net/profile/Mei-Dong-8?ev=hdr_xprf' target='_blank'><i class='ai ai-researchgate fa-lg'></i></a> &nbsp;<a href='https://orcid.org/0000-0003-1735-5361' target='_blank'><i class='ai ai-orcid fa-lg'></i></a><br>Site made with Quarto<br>© 2026 Mei Dong"
 
 format:
   html:
@@ -59,4 +52,3 @@ format:
     link-external-icon: false
     # This is to include fontawesome and academic icons in the headers:
     include-in-header: "_includes/header.html"
-
