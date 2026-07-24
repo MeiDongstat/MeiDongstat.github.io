@@ -69,6 +69,17 @@ make_publication_item <- function(pub) {
     fragment.only = TRUE
   )
 
+  award_text <- if ("awards" %in% names(pub)) pub$awards else NA_character_
+  awards <- if (!is.na(award_text) && nzchar(award_text)) {
+    award_content <- markdown::markdownToHTML(
+      text = award_text,
+      fragment.only = TRUE
+    )
+    glue::glue('<div class="publication-awards">{award_content}</div>')
+  } else {
+    ""
+  }
+
   doi_url <- if (!is.na(pub$doi) && nzchar(pub$doi)) {
     paste0("https://doi.org/", pub$doi)
   } else {
@@ -84,6 +95,7 @@ make_publication_item <- function(pub) {
 
   glue::glue(
     '<li><div class="publication-citation">{citation}</div>',
+    '{awards}',
     '<div class="publication-links">{links}</div></li>'
   )
 }
