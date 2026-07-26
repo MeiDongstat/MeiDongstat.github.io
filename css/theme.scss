@@ -81,6 +81,22 @@ h1, .h1, h2, .h2, h3, .h3 {
   margin-bottom: 0.35rem;
 }
 
+#peer-reviewed-publications .publication-citation p {
+  margin-bottom: 0;
+}
+
+#peer-reviewed-publications .publication-links:not(:empty) {
+  margin-top: 0.35rem;
+}
+
+#peer-reviewed-publications .publication-list > li {
+  margin-bottom: 1.25rem;
+}
+
+#peer-reviewed-publications .publication-list > li:last-child {
+  margin-bottom: 0;
+}
+
 div.quarto-about-trestles .about-entity .about-link {
     background-color: $primary-color;
     color: white;
