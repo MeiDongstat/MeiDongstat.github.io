@@ -64,7 +64,7 @@ I am a PhD candidate in Biostatistics at the University of Toronto. Below is a b
   <li><span class="award-name">CANSSI STAGE Trainee</span><span class="award-year">2024–2026</span></li>
   <li><span class="award-name">DSI Doctoral Student Fellowship</span><span class="award-year">2024–2027</span></li>
   <li><span class="award-name">University of Toronto SGS Travel Grant</span><span class="award-year">May 2024</span></li>
-  <li><span class="award-name">Queen Elizabeth II (Sanofi/John G. FitzGerald) Graduate Scholarship in Science and Technology</span><span class="award-year">2023–2024, 2025–2026</span></li>
+  <li><span class="award-name">Queen Elizabeth II/Sanofi/John G. FitzGerald Graduate Scholarships in Science and Technology</span><span class="award-year">2023–2024, 2025–2026</span></li>
   <li><span class="award-name">University of Toronto Fellowships</span><span class="award-year">2021–2023</span></li>
   <li><span class="award-name">Statistical Society of Canada Annual Meeting Student Travel Grant</span><span class="award-year">May 2019</span></li>
   <li><span class="award-name">University of Saskatchewan Student Travel Award</span><span class="award-year">May 2019</span></li>
