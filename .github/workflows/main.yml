@@ -50,6 +50,18 @@ jobs:
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
 
+      - name: Verify R rendering dependencies
+        shell: Rscript {0}
+        run: |
+          required <- c("knitr", "rmarkdown", "glue", "htmltools", "markdown", "readr")
+          missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
+          if (length(missing)) {
+            for (package in missing) {
+              cat("::error::Missing R rendering dependency: ", package, "\n", sep = "")
+            }
+            quit(status = 1)
+          }
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
