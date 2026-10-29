@@ -28,6 +28,8 @@ make_citation <- function(pub) {
 
   year <- if (!is.na(pub$year) && nzchar(pub$year)) {
     glue::glue(" ({pub$year}).")
+  } else if (grepl("[.!?]$", pub$authors)) {
+    ""
   } else {
     "."
   }
