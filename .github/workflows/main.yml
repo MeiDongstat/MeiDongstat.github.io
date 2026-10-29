@@ -1,6 +1,7 @@
 name: Render and Publish Quarto Site
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main, master ]
   pull_request:
@@ -11,7 +12,7 @@ on:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -29,7 +30,7 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libicu-dev libcurl4-openssl-dev r-base
+          sudo apt-get install -y libicu-dev libcurl4-openssl-dev
 
       - name: Query R package dependencies
         run: |
@@ -64,13 +65,17 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: '1.7.32'
 
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
 
       - name: Publish to GitHub Pages
+        if: github.event_name != 'pull_request'
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
